@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <style>
+        span{
+            color: red;
+            opacity: 0.5;
+        }
+        .form-control{
+            box-shadow: 8px 8px 16px black;
+        }
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Code Generator</title>
+  </head>
+  <body class="d-flex justify-content-center">
+      <div class="col-sm-7 container p-4">
+        <div class="p-5 bg-dark text-white" style="box-shadow: 8px 8px 16px black; border-radius: 20px;">
+            <div>
+                <h1>Email Page Generator</h1>
+                <small><span>* Mandatory fields</span></small>
+                <form action="email_page.php" method="POST">
+                    <div class="row">
+                        <div class="form-group col-sm">
+                            <label for="Logo link">Logo<span> *</span></label>
+                            <input type="text" class="form-control" id="logo" name="logo" placeholder="Enter here link of your Logo" required>
+                        </div>
+                        <div class="form-group col-sm">
+                            <label for="logo_size">Logo Size<span> *</span></label>
+                            <select class="form-control" name="logo_size" id="logo_size" required>
+                                <option selected disabled>Select your logo size</option>
+                                <option value="18%">Small</option>
+                                <option value="28%">Medium</option>
+                                <option value="38%">Large</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm">
+                            <label for="title">Title<span> *</span></label>
+                            <input type="text" class="form-control" id="title" name="title" placeholder="Title" required>
+                        </div>
+                        <div class="form-group col-sm">
+                            <label for="Subtitle">Subtitle</label>
+                            <input type="text" class="form-control" id="Subtitle" name="Subtitle" placeholder="Subtitle">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm">
+                            <label for="image_link">Image<span> *</span></label>
+                            <input type="text" class="form-control" id="image_link" name="image_link" placeholder="Enter here link of your Image"  required>
+                        </div>
+                        <div class="form-group col-sm">
+                            <label for="Button_text">Button Text<span> *</span></label>
+                            <input type="text" class="form-control" id="Button_text" name="Button_text" placeholder="Button text"  required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm">
+                            <label for="landing_page_link">Landing Page<span> *</span></label>
+                            <input type="text" class="form-control" id="landing_page_link" name="landing_page_link" placeholder="Enter here link of your Landing Page"  required>
+                        </div>
+                        <div class="form-group col-sm">
+                            <label for="color_code">Color<span> *</span></label>
+                            <input type="text" class="form-control" id="color_code" name="color_code" placeholder="Color code" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Abstract<span> *</span></label>
+                        <textarea class="form-control" id="abstract" name="abstract" rows="7" placeholder="Enter your abstract here"  required></textarea>
+                    </div>
+                    <center><button type="submit" class="btn btn-primary btn-lg px-5" style="box-shadow: 8px 8px 16px black;">Submit</button></center>
+                </form>
+            </div>
+        </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
